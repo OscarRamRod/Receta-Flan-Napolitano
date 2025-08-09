@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLAN NAPOLITANO</title>
+<!-- # la etiqueta "link" sirve para ligar todo los estilos que se hacen en el archivo
+CSS, siempre van en el "head". Es una etiqueta autocontenida (no tiene cierre) que se usa para enlazar recursos externos al documento HTML.
+Siempre va dentro de la sección <head> del HTML.  -->
+
+<!-- # rel="stylesheet" El atributo rel (relationship) define la relación 
+entre el documento HTML y el recurso enlazado. -->
+
+<!-- # "stylesheet" indica que el recurso es una hoja de estilos CSS 
+que debe aplicarse al documento. -->
+
+<!-- # href="Css/estilos.css"
+
+href (Hypertext Reference) especifica la ruta al archivo externo.
+
+"Css/estilos.css" es la ubicación del archivo CSS:
+
+Css/ → Carpeta llamada "Css" (puede ser también css/ en minúsculas, 
+dependiendo del sistema de archivos).
+
+estilos.css → Nombre del archivo CSS. -->
+
+    <link rel="stylesheet" href="Css/estilos.css">
+</head>
+<body>
+    <header>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Protest+Guerrilla&display=swap" rel="stylesheet">
+        <h1 id="titulo"> Flan Napolitano
+        </h1>
+        <nav>
+        <button class="botones">
+            Ingresar
+        </button>
+        <button class="botones">
+            Registrar
+        </button>
+        <img src="img/chef.png" id="cocinero" alt="cocinero">
+        <ul id="menu">
+            <li>
+                <STrong>
+                    <em>
+                        INGREDIENTES:
+                    </em>
+                </STrong>
+            </li>
+            <li>
+                <STRong>
+                    <em>
+                        MODO DE PREPARACIÓN:
+                    </em>
+                </STRong>
+            </li>
+        </ul>
+    </nav>
+    </header>
+    <main>
+        
+        <!-- # el "id" se utiliza solo una vez para modificar un solo elemento -->
+        
+        <!-- # "img" Es una etiqueta autocontenida (no necesita cierre) que se utiliza para insertar imágenes en una página web.
+        Requiere al menos dos atributos: src (fuente de la imagen) y alt (texto alternativo). -->
+
+        <!-- # id="Paylimon"
+        El atributo id asigna un identificador único a la imagen.
+        Se usa para: Referenciar el elemento en CSS (ej: #Paylimon { ... }).
+        Manipularlo con JavaScript (ej: document.getElementById("Paylimon")). -->
+        
+        <!-- # src="img/Paylimon.jpg"
+        src (source) define la ruta de la imagen.
+        "img/Paylimon.jpg" indica que: La imagen está en una carpeta llamada img/.
+        El nombre del archivo es Paylimon.jpg.
+        Nota: Si la ruta es incorrecta, la imagen no se mostrará. -->
+
+        <!-- # alt="portada"
+        alt (alternative text) proporciona un texto descriptivo que aparece: 
+        *Si la imagen no carga.
+        *Para accesibilidad (lectores de pantalla para personas con discapacidad visual).
+        *En motores de búsqueda (SEO). -->
+
+        <!-- # Recomendación: Usa descripciones claras (ej: alt="Logo de Paylimon"). -->
+        <img
+         
+        id="FlanNapolitano"
+        src="img/FlanNapolitano.jpg" alt="portada">
+        <h2 class="subtitulo1">
+            Flan Napolitano
+        </h2>
+        <h2 class="subtitulo">
+            INGREDIENTES:
+        </h2>
+        <ul class="listas">
+        <li>
+            3/4 De taza de azúcar refinada.
+        </li>
+        <li>
+            1 Lata de Leche Condensada LA LECHERA.
+        </li>
+        <li>
+            1 Lata de Leche Evaporada CARNATION CLAVEL.
+        </li>
+        <li>
+            1 Paquete de queso crema a temperatura ambiente (190 g).
+        </li>
+        <li>
+            5 Huevos.
+        </li>
+        <li>
+            1 Cucharada de esencia de vainilla
+        </li>
+        </ul>
+        <h2 class="subtitulo">
+            MODO DE PREPARACIÓN
+        </h2>
+        <!-- # el "ol" es una etiqueta para hacer listas ordenadas mientras "li" es un elemento de la lista. -->
+        <ol class="listas">
+            <li>
+                Horno precalentado a 180 °C.
+            </li>
+            <li>
+                Vierte el azúcar en una flanera y calienta a fuego medio para que se forme el caramelo; 
+                ladea con cuidado el molde para cubrir la superficie y las paredes.
+            </li>
+            <li>
+                Licúa la Leche Condensada LA LECHERA® con la Leche Evaporada CARNATION CLAVEL, el queso crema, los huevos y la esencia de vainilla. 
+                Vierte la preparación en la flanera y tapa con papel aluminio sellando las orillas. 
+                Coloca en un recipiente y cocina a baño María en el horno a 180 °C durante 1 1/2 horas.
+            </li>
+            <li>
+                Retira del fuego y deja enfriar por completo; desmolda y sirve. 
+            </li>
+        </ol>
+        <!-- # la etiqueta "p" sirve para hacer parrafos  -->
+        <p>
+            <strong>
+                <h1>
+                    Y para los conocedores: <br>¡El Flan Napolitano!
+                </h1>
+            </strong>
+            <h5><br>Y es que, un buen Flan Napolitano acompañado de un delicioso café, es de todos los días.
+                    <br>Después de esta rica combinación, no puede faltar una copita de licor del 43 para una mejor digestión.
+            </h5>
+        </p>
+        <!-- # la etiqueta "a" sirve para hacer un ancla, te direcciona a una ventana nueva, sin necesidad e cerrar 
+        la ventana principal. -->
+        <a href="https://cristaleriamonaco.com/como-preparar-un-Flan-Napolitano/" target="_blank">
+        Conoce más
+        </a>
+        <img id="corazon" src="img/Corazon.png" alt="imagen corazón">
+        <img id="mensaje" src="img/Mensaje.png" alt="imagen mensaje">
+       
+    </main>
+    <!-- # el class o clase es más específica para modificar varios elementos y que tengan la misma clasificación. -->
+    <footer>
+        <a href="https://es-la.facebook.com/" target="_blank">
+            <img class="redes" 
+            src="img/facebook.png" alt="icono de facebook"/>
+       </a>
+       <a href="https://www.instagram.com/" target="_blank">
+            <img class="redes"
+            src="img/instagram.png" alt="icono instagram"/>
+       </a>
+       <a href="https://x.com/" target="_blank">
+            <img class="redes"
+            src="img/twitter.png" alt="icono twitter"/>
+       </a>
+       <h5>Elaborado por Oscar Ramírez Rodríguez PILARES Diseño WEB</h5>
+    </footer>
+</body>
+</html>

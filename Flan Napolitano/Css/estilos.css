@@ -1,0 +1,228 @@
+/** 
+
+# (Asterisco)
+
+En CSS, el asterisco (*) se conoce como el selector universal.
+
+Significa que las reglas aplicadas dentro de las llaves { } afectarán todos los elementos HTML de la página.
+
+Es una forma de aplicar estilos globales **/
+
+/** 
+
+# margin: 0;
+
+margin es la propiedad que controla el espacio exterior alrededor de un elemento.
+
+Al establecerlo en 0, eliminamos cualquier margen predeterminado que los navegadores puedan aplicar (como en <body>, <h1>, <p>, etc.).
+
+# padding: 0;
+
+padding es la propiedad que controla el espacio interior de un elemento (entre su contenido y su borde). 
+
+### Alternativas modernas al *
+Aunque el * es útil, puede afectar el rendimiento en páginas grandes. 
+
+Alternativas comunes son:
+- Normalize.css: Una hoja de estilos que "normaliza" los estilos predeterminados sin eliminarlos por completo.
+- Reset CSS moderno:
+
+body, h1, p, ul, ol {
+    margin: 0;
+    padding: 0;
+}
+(Se listan solo los elementos necesarios en lugar de usar *).**/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: #ff0055;
+    height: 200px;
+    position: sticky;
+    top: 0px;
+    z-index:2;
+}
+
+main{
+    background-color: #ffddcc;
+}
+
+footer{
+    background-color: #ff8b43;
+}
+
+/**
+
+# Paylimon → Selector de ID (identificador único en HTML).
+
+# width: 60%; → Propiedad y valor (ancho del elemento al 60% de su contenedor padre).
+
+Explicación:
+# (numeral) → En CSS, el símbolo # se usa para seleccionar un elemento por su ID.
+
+Paylimon → Es el nombre del ID (debe coincidir con el atributo id="Paylimon" en el HTML).
+
+width: 60%; → Establece el ancho del elemento al 60% del ancho de su contenedor padre.**/ 
+
+/**
+
+Los IDs se aplica a un único elemento HTML (porque los IDs deben ser únicos en una página).
+
+**/
+
+/**
+
+.redes → Selector de clase.
+
+width: 10%; → Propiedad y valor (ancho del elemento al 10% de su contenedor padre).
+
+Explicación:
+. (punto) → En CSS, el símbolo . se usa para seleccionar elementos por su clase.
+
+redes → Es el nombre de la clase (debe coincidir con el atributo class="redes" en el HTML).
+
+width: 10%; → Establece el ancho del elemento al 10% del ancho de su contenedor padre.
+
+## Se puede aplicar a múltiples elementos (a diferencia del ID, que es único).
+
+**/
+
+#cocinero {
+    width: 10%;
+    position: absolute;
+    left: 100px;
+    top: 20px;
+}
+
+#menu {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 25px;
+    font-weight: 600;
+    color: blue;
+    position: absolute;
+    left: 70%;
+    top: 50px;
+}
+
+.botones {
+    width: 5%;
+    position: relative;
+    left: 1650px;
+    bottom: 100px;
+}
+
+#titulo {
+    font-family: cursive;
+    font-size: 90px;
+    font-weight: 600;
+    color: blanchedalmond;
+    position: relative;
+    left: 500px;
+    top: 60px;
+}
+
+#FlanNapolitano {
+    width: 40%;
+    border: 10px rgb(55, 238, 255) groove;
+    position: relative;
+    right: 100px;
+    top: 50px;
+    border-radius: 10px;
+    position: relative;
+    left: 600px;
+    top: 50px;
+}
+
+.subtitulo1 {
+    font-family: "Pacifico", cursive;
+    font-weight: 500;
+    font-style: normal;
+    border: 40px rgb(0, 255, 13) outset;
+    padding: 30px;
+    width: 10%;
+    border-radius: 10px;
+    position: relative;
+    left: 800px;
+    top: 80px;
+}
+
+.subtitulo {
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+    border: 15px rgb(0, 255, 13) outset;
+    padding: 20px;
+    width: 25%;
+    border-radius: 20px;
+    position: relative;
+    left: 100px;
+    top: 80px;
+    margin-bottom: 50px;
+     }
+
+.listas {
+    font-family: "Protest Guerrilla", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    border: 10px rgb(0, 4, 255) double;
+    padding: 20px;
+    width: 25%;
+    border-radius: 10px;
+    position: relative;
+    left: 600px;
+    top: 80px;
+    margin-bottom: 50px;
+}
+
+#corazon {
+    width: 70px;
+    position: relative;
+    bottom: 1500px;
+    left: 550px;
+}
+
+#mensaje {
+    width: 70px;
+    position: fixed;
+    right: 100px;
+    bottom: 100px;
+}
+
+.redes {
+    width: 4%;
+    position: relative;
+    left: 1600px;
+}
+/**
+especificidad: el nombre de las etiquetas es muy general: header, img, h2, p y button
+argumento class que es más específico afecta a varias etiquetas seleccionadas.
+En html es el class y en css es un . (punto)
+Argumento id que es muy específico solo afecta a un elemento seleccionado.
+En html es el (id) y en css (#)-->
+
+Unidades de medida en css:
+pixelex px,
+porcentaje %,
+punto pt,
+centimetros cm,
+pulgadas in,
+width viewport wv,
+height viewport wh,
+rem,
+em,
+querto de pulgada Q,
+
+Tipos de border:
+solid
+dotted
+dashed
+double
+groove
+ridge
+inset
+outset
+
+/**
